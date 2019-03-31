@@ -7,6 +7,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 
 import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms"
 import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
