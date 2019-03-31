@@ -7,14 +7,14 @@ import { ProfileComponent } from './profile/profile.component';
 import { RepositoriesComponent } from './repositories/repositories.component';
 
 import {HttpClientModule} from "@angular/common/http";
-import { GithubComponent } from './github/github.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     RepositoriesComponent,
-    GithubComponent
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
