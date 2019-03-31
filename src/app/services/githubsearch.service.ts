@@ -43,9 +43,9 @@ export class GithubsearchService {
   }
 
 
-  getUser(username){
+  getUser(username:string){
     let promise=new Promise((resolve,reject)=>{
-      this.http.get<ProfileInterface>("https://api.github.com/users/"+username+"&access_token="+this.GitHubApiKey).toPromise().then(
+      this.http.get<ProfileInterface>("https://api.github.com/users/"+username+"?access_token="+this.GitHubApiKey).toPromise().then(
         res=>{
           console.log(res)
           resolve()
@@ -60,7 +60,7 @@ export class GithubsearchService {
 
   }
 
-  getUserRepos(username){
+  getUserRepos(username:string){
     let promise=new Promise((resolve,reject)=>{
       this.http.get<RepositoriesInterface>("https://api.github.com/users/"+username+"/repos?access_token="+this.GitHubApiKey).toPromise().then(
         res=>{
@@ -77,7 +77,7 @@ export class GithubsearchService {
 
   }
 
-  searchRepos(query){
+  searchRepos(query:string){
     let promise=new Promise((resolve,reject)=>{
       this.http.get<RepositoriesInterface>("https://api.github.com/search/repositories?q="+query+"&access_token="+this.GitHubApiKey)
       .toPromise().then(
