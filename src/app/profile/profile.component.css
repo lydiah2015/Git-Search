@@ -1,0 +1,31 @@
+/* body*/
+  .container {
+    margin-top: 2rem;
+  }
+  a:hover {
+    text-decoration: none;
+    color: rgb(163, 236, 196);
+  }
+  
+  /* avatar*/
+  img {
+    max-width: 80%;
+    border-radius: 670px;
+  }
+  .image-right {
+    padding-top: 6rem;
+    text-align: center;
+  }
+  
+  /*github user*/
+  .git-user {
+    padding-top: 1rem;
+  }
+  .git-user-content {
+    padding-bottom: 7rem;
+  }
+
+  
+ 
+
+  
