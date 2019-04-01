@@ -12,7 +12,7 @@ export class ProfileComponent implements OnInit {
 
   profile:Profile;
   profileRepos:Repository[];
-  searchName:string="lydiah2015";
+  searchName:string;
 
   constructor(private githubService:GithubsearchService) {
     this.profileRepos=[];
@@ -20,6 +20,8 @@ export class ProfileComponent implements OnInit {
   
 
   ngOnInit() {
+    this.searchName="lydiah2015";
+    this.searchUser();
 
   }
 
