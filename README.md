@@ -1,27 +1,37 @@
-# GithubSearch
+GithubSearch
+===================
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+**Author**: [Mitchelle Makini](https://github.com/lydiah2015)
 
-## Development server
+## Description ##
+
+This is a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories
+
+## Installation ##
+### Clone
+* You can clone to your local from [https://github.com/lydiah2015/Git-Search](https://github.com/lydiah2015/Git-Search) 
+* `git clone https://github.com/lydiah2015/Git-Search.git`
+
+### Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
+### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Live demo 
+To view the page click on the link below
+* [https://lydiah2015.github.io/Git-Search/](https://lydiah2015.github.io/Git-Search/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Technology used 
 
-## Running end-to-end tests
+* Angular CLI, HTML & CSS.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Known Bugs 
 
-## Further help
+There are no known bugs. If you find any be sure to create an issue 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## License ##
+This project is licensed under the MIT Open Source license, (c) [Mitchelle Makini](https://github.com/lydiah2015)
