@@ -11,6 +11,7 @@ export class RepositoriesComponent implements OnInit {
 
   searchRepos:Repository[];
   searchName:string;
+  error:boolean;
 
   constructor(public githubService:GithubsearchService) {
     this.searchRepos=[];
@@ -20,10 +21,17 @@ export class RepositoriesComponent implements OnInit {
   }
 
   searchRepo(){
+    this.searchRepos=[];
     this.githubService.searchRepos(this.searchName).then(()=>{
       this.searchRepos=this.githubService.searchedRepos;
+      this.error=false;
+      if(this.searchRepos.length<1){
+        this.error=true;
+      }
+
     }).catch(error=>{
       console.log(error)
+      this.error=true;
     })
   }
 
