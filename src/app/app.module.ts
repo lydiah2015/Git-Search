@@ -9,13 +9,15 @@ import { RepositoriesComponent } from './repositories/repositories.component';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms"
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProfileComponent,
     RepositoriesComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
